@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAIspVitFi0kWDZ5tBS7yBZWiQhMPnW47c",
-  authDomain: "darxx830.firebaseapp.com",
-  projectId: "darxx830",
-  storageBucket: "darxx830.firebasestorage.app",
-  messagingSenderId: "1015760525652",
-  appId: "1:1015760525652:web:2a993c429a7159351250c1",
-  measurementId: "G-RW9SV0ZJ3G"
+  apiKey: "AIzaSyCS-_m_AilyHe41M57GJ-5q4ID2uTYA21s",
+  authDomain: "darxx830-7b39c.firebaseapp.com",
+  projectId: "darxx830-7b39c",
+  storageBucket: "darxx830-7b39c.firebasestorage.app",
+  messagingSenderId: "690687159459",
+  appId: "1:690687159459:web:c1ed866544e929b33ae316",
+  measurementId: "G-2W9M454Z47"
 };
 
 
