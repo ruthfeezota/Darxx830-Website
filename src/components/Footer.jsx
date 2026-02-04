@@ -1,31 +1,45 @@
-import React from 'react'
+import React from "react";
 
-function Footer() {
+export default function Footer() {
   return (
-    <div>
-    <footer className="block">
-      <div className="py-16 md:py-20 mx-auto w-full max-w-screen-4xll px-5 md:px-10">
-        <div className="flex-col flex items-center">
-          <div className="text-center font-semibold font-exo space-x-[200px]">
-            <a href="/" className="inline-block px-6 py-2 font-normal text-white transition hover:text-blue-600">
-            About
+    <footer className="w-full bg-black text-white">
+      {/* thin divider like the rest of the site */}
+      <div className="h-px w-full bg-white/10" />
+
+      <div className="mx-auto max-w-screen-2xl px-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6">
+          {/* Left */}
+          <div className="text-[11px] uppercase tracking-[0.35em] text-white/60">
+            © {new Date().getFullYear()} DARXX830
+          </div>
+
+          {/* Center (optional brand hit) */}
+          <div className="hidden sm:block text-[11px] uppercase tracking-[0.35em] text-white/40">
+            Austin, TX
+          </div>
+
+          {/* Right */}
+          <div className="flex items-center gap-4 text-[11px] uppercase tracking-[0.35em]">
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-white/70 hover:text-[#FB823E] transition"
+            >
+              Instagram
             </a>
-            <a href="/" className="inline-block px-6 py-2 font-normal text-white transition hover:text-blue-600">
-            New Music
+
+            <span className="text-white/20">•</span>
+
+            <a
+              href="mailto:booking@darxx830.com"
+              className="text-white/70 hover:text-[#FB823E] transition"
+            >
+              Booking
             </a>
-            <a href="/" className="inline-block px-6 py-2 font-normal text-white transition hover:text-blue-600">
-            Blog
-            </a>
-            <a href="/" className="inline-block px-6 py-2 font-normal text-white transition hover:text-blue-600">
-            Contact
-            </a>
-       
           </div>
         </div>
       </div>
     </footer>
-    </div>
-  )
+  );
 }
-
-export default Footer

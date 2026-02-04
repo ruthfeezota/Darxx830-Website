@@ -1,63 +1,84 @@
-import React from 'react';
-import SampleImage from '../assets/AmpleImage.jpg'
+import React from "react";
+import SampleImage from "../assets/MainDARXX830.JPEG";
 
 function Hero() {
   return (
-    <section className="bg-black text-white py-20 px-4">
-      {/* Painter tags
-      <div className="flex justify-end space-x-4 text-xs uppercase text-amber-600 font-semibold mb-6 pr-6">
-      <div className='w-[260px] bg-green-600 py-3'>
-        <span className='bg-green-600 text-black ml-4'>Rapper</span> <span className='text-black bg-green-600 ml-3'>★</span>
-        <span className='bg-green-600 text-black ml-4'>Lyricist</span> <span className='text-black bg-green-600 ml-3'>★</span>
-        <span className='bg-green-600 text-black ml-4'>Artist</span>
-        
-       
-        </div>
-      </div> */}
+    <section className="w-full bg-black text-white">
+      <div className="mx-auto max-w-screen-2xl px-4">
+        {/* Frame */}
+        <div className="bg-black">
+          <div className="grid grid-cols-1 lg:grid-cols-12">
+            
+            {/* LEFT: TEXT */}
+            <div className="lg:col-span-7 p-8 md:p-12 border-b border-white/10 lg:border-b-0 lg:border-r lg:border-white/10">
+              <h1 className="text-[#FB823E] font-extrabold uppercase leading-[0.9] tracking-tight text-[44px] sm:text-[64px] md:text-[84px]">
+                DARXX <span
+                  className="text-transparent"
+                  style={{ WebkitTextStroke: "1px rgba(251,130,62,0.55)" }}
+                >830</span>
+              </h1>
 
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between space-y-10 lg:space-y-0">
-        {/* Left images */}
-        <div className='ml-6'>
-        <div className="flex flex-col space-y-4 items-start">
-          <img
-            src={SampleImage}
-            alt="Artist painting"
-            className="w-40 rotate-[10deg] shadow-2xs pb-4"
-          />
-          <div className="flex space-x-4">
-            <img src={SampleImage} alt="Art 1" className="w-20 h-20 object-cover border-2" />
-            <img src={SampleImage} alt="Art 2" className="w-20 h-20 object-cover border-2" />
+              <p className="mt-4 max-w-xl text-sm sm:text-base text-white/70 leading-relaxed">
+                I’m all about the hustle and hard work, but I’m also not afraid to
+                speak my mind and address the issues that matter. If you haven’t
+                heard my music yet, you’re missing out.
+              </p>
+
+              {/* Badge + Actions */}
+              <div className="mt-8 flex items-center gap-5">
+                {/* Circular badge */}
+                <div className="relative h-16 w-16 rounded-full border border-white/15 bg-black/30 flex items-center justify-center">
+                  <span className="text-[10px] uppercase tracking-[0.25em] text-white/70">
+                    830
+                  </span>
+                  <div className="absolute inset-0 rounded-full border border-[#FB823E]/30" />
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="#music"
+                    className="inline-flex items-center rounded-full border border-white/15 px-5 py-2 text-xs uppercase tracking-widest text-white/80 hover:text-[#FB823E] hover:border-[#FB823E]/50 transition"
+                  >
+                    New Music
+                  </a>
+                  <a
+                    href="#shows"
+                    className="inline-flex items-center rounded-full border border-white/15 px-5 py-2 text-xs uppercase tracking-widest text-white/80 hover:text-[#FB823E] hover:border-[#FB823E]/50 transition"
+                  >
+                    Instagram Show
+                  </a>
+                </div>
+              </div>
+
+              {/* Divider inside text panel */}
+              <div className="mt-10 h-px w-full bg-white/10" />
+
+              <div className="mt-5 text-xs uppercase tracking-[0.35em] text-white/50">
+                New single: <span className="text-white/70">“Everyday”</span>
+              </div>
+            </div>
+
+            {/* RIGHT: IMAGE */}
+            <div className="lg:col-span-5">
+              <div className="h-[360px] w-full overflow-hidden lg:h-[600px]">
+                <img
+                  src={SampleImage}
+                  alt="Darxx830"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
           </div>
-          <p className="text-xs mt-4 max-w-[200px] uppercase tracking-wide leading-tight text-right">
-            The excellence of my art shown to people. Every art for every soul.
-          </p>
-        </div>
-</div>
-        {/* Center Heading */}
-        <div className="text-center">
-          <h1 className="text-[100px] lg:text-[150px] leading-none font-extrabold uppercase font-boldonse text-green-600">
-            Austin
-            <br />
-            <span className="text-amber-600">Made</span>
-          </h1>
-          {/* <div className="flex justify-center mt-4 space-x-2 text-amber-600 text-xl">
-            <span>★</span><span>★</span><span>★</span>
-          </div> */}
         </div>
 
-        {/* Right image */}
-        <div className="w-64 h-auto">
-          <img
-            src={SampleImage}
-            alt="Portrait eating leaves"
-            className="w-full h-auto object-cover shadow-lg"
-          />
-        </div>
+    
       </div>
-    </section>
+         {/* Divider line */}
+        <div className="mt-1 h-px w-full bg-white/10" />
 
-// Amber-600
-// Green-600
+
+    </section>
   );
 }
 
